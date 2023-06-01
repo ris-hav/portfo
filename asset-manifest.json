@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ris-hav.github.io/portfolio/static/css/main.830be6c6.css",
+    "main.js": "/ris-hav.github.io/portfolio/static/js/main.8b2dd2ba.js",
+    "static/js/787.1ed0c42c.chunk.js": "/ris-hav.github.io/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/test1.png": "/ris-hav.github.io/portfolio/static/media/test1.6fd955c2f0534ffe4621.png",
+    "static/media/port3.png": "/ris-hav.github.io/portfolio/static/media/port3.44957653f6d4576b16b8.png",
+    "static/media/port2.png": "/ris-hav.github.io/portfolio/static/media/port2.2f0614ff3dee4e2d1e98.png",
+    "static/media/port6.png": "/ris-hav.github.io/portfolio/static/media/port6.040c81161ac8d7926eb4.png",
+    "static/media/port1.png": "/ris-hav.github.io/portfolio/static/media/port1.7503e98bfa810fb7c7a0.png",
+    "static/media/port5.png": "/ris-hav.github.io/portfolio/static/media/port5.0cb2d9f00f591db88d13.png",
+    "static/media/port4.png": "/ris-hav.github.io/portfolio/static/media/port4.59de73af9b668fc8d55f.png",
+    "static/media/cv.pdf": "/ris-hav.github.io/portfolio/static/media/cv.2df092868aa3e9866d26.pdf",
+    "index.html": "/ris-hav.github.io/portfolio/index.html",
+    "main.830be6c6.css.map": "/ris-hav.github.io/portfolio/static/css/main.830be6c6.css.map",
+    "main.8b2dd2ba.js.map": "/ris-hav.github.io/portfolio/static/js/main.8b2dd2ba.js.map",
+    "787.1ed0c42c.chunk.js.map": "/ris-hav.github.io/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.830be6c6.css",
+    "static/js/main.8b2dd2ba.js"
+  ]
+}
