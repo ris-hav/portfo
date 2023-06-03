@@ -7,7 +7,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27ae60;
+  // --color-secondary: #27ae60;
+  --color-secondary: #cda434;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey: #f8f8f8;
@@ -20,12 +21,19 @@
   --br-sm-2: 14px;
   --trans: all 0.4s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
-  --port-hover: rgba(39, 174, 96, 0.9);
+  // --port-hover: rgba(39, 174, 96, 0.9);
+
+  // --port-hover-start: rgba(39, 174, 96, 1);
+  // --port-hover-end: rgba(39, 174, 96, 0.0);
+  --port-hover-start: rgba(205, 164, 52, 1);
+  --port-hover-end: rgba(205, 164, 52, 0);
 }
 
 .light-mode {
   --color-primary: #ffffff;
-  --color-secondary: #cabf1e;
+  // --color-secondary: #cabf1e;
+  // --color-secondary: #f2c6b6;
+  --color-secondary: #e0b1cb;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey: #f8f8f8;
@@ -35,7 +43,11 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
-  --port-hover: rgba(202, 191, 30, 0.9);
+  // --port-hover: rgba(202, 191, 30, 0.9);
+  // --port-hover-start: rgba(202, 191, 30, 1);
+  // --port-hover-end: rgba(202, 191, 30, 0.0);
+  --port-hover-start: rgba(224, 177, 203, 1);
+  --port-hover-end: rgba(224, 177, 203, 0);
 }
 
 body {
@@ -331,24 +343,6 @@ section {
             background-color: var(--color-secondary);
             transition: var(--trans);
           }
-          .html {
-            width: 95%;
-          }
-          .css {
-            width: 90%;
-          }
-          .sass {
-            width: 85%;
-          }
-          .js {
-            width: 75%;
-          }
-          .rjs {
-            width: 75%;
-          }
-          .java {
-            width: 70%;
-          }
         }
       }
     }
@@ -445,6 +439,9 @@ section {
       object-fit: cover;
       border-radius: 15px;
     }
+    // img:hover {
+    //   opacity: 1;
+    // }
     .hover-items {
       display: flex;
       justify-content: center;
@@ -452,7 +449,12 @@ section {
       flex-direction: column;
       width: 100%;
       height: 300px;
-      background-color: var(--port-hover);
+      // background-color: var(--port-hover);
+      background-image: linear-gradient(
+        to bottom,
+        var(--port-hover-start),
+        var(--port-hover-end)
+      );
       position: absolute;
       left: 0;
       top: 0;

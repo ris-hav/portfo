@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import skilldata from "./skilldata";
+import Skill from "./Skill";
 
 export default function About() {
   return (
@@ -19,8 +21,7 @@ export default function About() {
               experience working with modern frontend frameworks such as React,
               Bootstrap and jQuery.
               <br />
-              <br />
-              I believe that collaboration and communication are key to
+              <br />I believe that collaboration and communication are key to
               delivering successful projects, and I work closely with clients
               and stakeholders to ensure that their vision is realized in the
               final product.
@@ -39,7 +40,7 @@ export default function About() {
               <div class="abt-text">
                 <p class="large-text">20+</p>
                 <p class="small-text">
-                  Front-end <br />
+                  React <br />
                   Projects
                 </p>
               </div>
@@ -55,7 +56,7 @@ export default function About() {
             </div>
             <div class="about-item">
               <div class="abt-text">
-                <p class="large-text">17</p>
+                <p class="large-text">80+</p>
                 <p class="small-text">
                   Coded <br />
                   iOS siri shortcuts
@@ -76,61 +77,10 @@ export default function About() {
         <div class="about-stats">
           <h4 class="stat-title">My Skills</h4>
           <div class="progress-bars">
-            <div class="progress-bar">
-              <p class="prog-title">html5</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="html"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">css3</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="css"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">sass</p>
-              <div class="progress-con">
-                <p class="prog-text">85%</p>
-                <div class="progress">
-                  <span class="sass"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">javascript</p>
-              <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                  <span class="js"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">reactjs</p>
-              <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                  <span class="rjs"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-bar">
-              <p class="prog-title">java</p>
-              <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="java"></span>
-                </div>
-              </div>
-            </div>
+            {skilldata.map((sk) => {
+              const { name, knowledge } = sk;
+              return <Skill name={name} knowledge={knowledge} />;
+            })}
           </div>
         </div>
         <h4 class="stat-title">My Timeline</h4>
@@ -149,7 +99,7 @@ export default function About() {
               solutions using SAP ABAP. I have a strong understanding of these
               technologies and how they can be leveraged to create efficient and
               effective solutions.
-               {/* I have extensive experience working on
+              {/* I have extensive experience working on
               projects that utilize a variety of technologies, including
               frontend development, Selenium automation testing, and SAP ABAP.
               My work in frontend development has focused on creating visually
@@ -162,12 +112,14 @@ export default function About() {
             </p>
           </div>
           <div class="timeline-item">
-             {/* remove the div tl-icon if you don't want igt for the other items  */}
+            {/* remove the div tl-icon if you don't want igt for the other items  */}
             <div class="tl-icon">
               <i class="fa-solid fa-briefcase"></i>
             </div>
             <p class="tl-duration">Apr 2018 - Jun 2018</p>
-            <h5>Intern <span> - Tata Motors</span></h5>
+            <h5>
+              Intern <span> - Tata Motors</span>
+            </h5>
             <p>
               I have experience working on projects that involved utilizing
               Python to manipulate CSV files for data analysis, conducting
@@ -178,5 +130,5 @@ export default function About() {
         </div>
       </section>
     </>
-  )
+  );
 }
