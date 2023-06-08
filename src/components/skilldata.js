@@ -9,7 +9,7 @@ const skilldata = [
   },
   {
     name: "SASS",
-    knowledge: "85%",
+    knowledge: "70%",
   },
   {
     name: "JAVASCRIPT",
@@ -20,7 +20,15 @@ const skilldata = [
     knowledge: "85%",
   },
   {
+    name: "MATERIAL UI",
+    knowledge: "60%",
+  },
+  {
     name: "JAVA",
+    knowledge: "70%",
+  },
+  {
+    name: "MYSQL",
     knowledge: "70%",
   },
 ];

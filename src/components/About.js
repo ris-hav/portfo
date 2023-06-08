@@ -38,7 +38,7 @@ export default function About() {
           <div class="right-about">
             <div class="about-item">
               <div class="abt-text">
-                <p class="large-text">20+</p>
+                <p class="large-text">30+</p>
                 <p class="small-text">
                   React <br />
                   Projects
